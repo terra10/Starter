@@ -1,0 +1,100 @@
+{{!< default}}
+
+{{#post}}
+    <article class="gh-article {{post_class}}">
+
+        <header class="gh-header gh-canvas">
+            <h1 class="gh-title">{{title}}</h1>
+
+            {{#if custom_excerpt}}
+                <p class="gh-excerpt about">{{custom_excerpt}}</p>
+            {{/if}}
+
+            {{#if feature_image}}
+                <img class="gh-feature-image" src="{{feature_image}}" alt="{{title}}"/>
+            {{/if}}
+        </header>
+
+        <div class="gh-content gh-canvas">
+            <div class="divider about"></div>
+            <div class="w-layout-grid main-paragraph-wrap">
+                <p id="about-left" class="paragraph-light">Terra 10
+                    is een jong initiatief binnen het Rubix ecosysteem. Binnen Rubix, die al bijna 10 jaar een van de
+                    grootste
+                    integratiespecialisten is in Nederland, is de laatste jaren een hecht team met een additionele focus
+                    ontstaan.
+                    Uit een bijna pionierachtige vak-interesse hebben deze consultants zich toegelegd op concepten als
+                    cloud,
+                    container, microservices, serverless en full-stack softwareontwikkeling. In 2018 is besloten deze
+                    expertise
+                    onder een eigen label te positioneren in de markt: Terra 10.
+                </p>
+                <p id="about-right" class="paragraph-light">De Terra 10 collega's vinden dat ze bij een leuk
+                    team horen. Ze delen allemaal dezelfde passie voor cloud technologie. Ze volgen de laatste
+                    technische
+                    ontwikkelingen op de voet en delen hun kennis: binnen het team en natuurlijk ook met klanten. Ze
+                    vinden dat
+                    zo leuk, dat ze er zelfs wat eigen tijd in investeren. De Terra 10 klanten werken graag met onze
+                    consultants
+                    omdat ze net dat stapje extra zetten om resulaten te boeken. No nonsense. En natuurlijk weten de
+                    Terra 10
+                    collega's ook dat er nog meer is dan alleen werk, dus is er voldoende ruimte voor fun.
+                </p>
+            </div>
+            <div class="employees">
+                <h2 class="employees__header">Een aantal van onze medewerkers</h2>
+                <div class="employee left"><img
+                        src="/assets/Jan-van-Zoggel-250.jpg"
+                        width="250" height="250" alt="Jan van Zoggel" class="employee__image">
+                    <div class="employee__content"><h3 class="employee__name">Jan van Zoggel</h3>
+                        <div class="employee__title">Cloud Native Solution Architect - Trainer, Auteur &amp; Blogger
+                        </div>
+                        <p class="employee__description">Jan is een ervaren consultant met een brede achtergrond in
+                            zowel software ontwikkeling als infrastructuur. De laatste jaren veel ervaring met
+                            Full-Stack (Oracle/Red Hat/Java &amp; Node/Typescript), software architectuur inclusief
+                            CI/CD en Infra-as-Code. De laatste jaren heeft hij zijn aandacht verlegd naar zowel de
+                            public als private cloud met bijbehorende concepten als Cloud Native, Cloud Platform
+                            Adoption en Cloud Application Modernization &amp; Migration.</p></div>
+                </div>
+                <div class="employee right"><img
+                        src="/assets/Luc-Gorissen.png"
+                        width="250" height="250" alt="Luc Gorissen" class="employee__image">
+                    <div class="employee__content right"><h3 class="employee__name">Luc Gorissen</h3>
+                        <div class="employee__title">Cloud Native Solution Architect - Trainer, Consultant</div>
+                        <p class="employee__description">Luc werkt sinds 1990 in de IT en heeft veel ervaring, zowel qua
+                            technologie als voor wat betreft de rollen die hij heeft vervuld. Passie van Luc is het
+                            introduceren van nieuwe technologie in grote bedrijven. Daarbij vult hij graag de rol in van
+                            (Cloud) Solution Architect. Luc heeft een bijzonder oog voor niet-functionele eisen en het
+                            goed laten aansluiten van oplossingen op de te behalen bedrijfsdoelen. Qua technologie gaat
+                            de belangstelling van Luc uit naar Cloud native oplossingen.</p></div>
+                </div>
+                <div class="employee left"><img
+                        src="/assets/Marcel-Maas.jpg"
+                        width="250" height="250" alt="Jan van Zoggel" class="employee__image">
+                    <div class="employee__content"><h3 class="employee__name">Marcel Maas</h3>
+                        <div class="employee__title">Full Stack Guru - Trainer, Blogger</div>
+                        <p class="employee__description">Marcel is één van onze all-round software engineers met een
+                            affiniteit met multimedia en design. Hij heeft in vroegere jaren gewerkt aan
+                            proces-automatisering met Oracle technologieën en is de laatste jaren alleen nog maar bezig
+                            met Cloud Native full-stack applicaties met technieken zoals Nodejs, Spring-Boot, Angular en
+                            React. Deze applicaties laat hij landen op platformen zoals Kubernetes of Openshift.
+                            Daarnaast is Marcel ook niet vies van een beetje UX en web design. </p></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="call-to-vacatures"><h5 class="heading-3 call-to-vacatures-jumbo">Wij zijn één van de eerste
+                Nederlandse initiatieven met een 100% focus op cloud-nativeness. En daar blijkt veel behoefte aan.
+                Daarom zijn we, ondanks ons relatief korte bestaan, nu al aan het uitbreiden. Ben jij de uitbreiding die
+                wij zoeken?</h5><a href="#" class="button white-button">Vacatures</a></div>
+        </div>
+    </article>
+    <div class="filosofie">
+        <div class="about-quote"><h2 class="heading-2">Onze filosofie</h2>
+            <div class="paragraph-bigger dark">Waar een pot bier is, is een weg! Mocht die weg er niet zijn dan
+                bouwen we die weg terwijl we er overheen lopen...
+            </div>
+            <div class="paragraph-light dark">― Marcel Maas, Resident Full-Stack Guru</div>
+        </div>
+    </div>
+    {{> "meetup"}}
+{{/post}}

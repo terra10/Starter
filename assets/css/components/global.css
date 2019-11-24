@@ -119,6 +119,7 @@ sub {
 
 a:not([class]) {
     color: color(var(--color-primary) l(-5%));
+    opacity: 1.2;
     text-decoration-skip-ink: auto;
 }
 

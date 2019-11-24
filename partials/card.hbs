@@ -1,25 +1,29 @@
 {{!--
 Re-usable card for linking to posts
 --}}
-
-<article class="gh-card {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
-    <a class="gh-card-link" href="{{url}}">
+<article class="blog-item {{post_class}} {{#if feature_image}}with-image{{else}}no-image{{/if}}">
+    <a class="blog-link" href="{{url}}">
         {{#if feature_image}}
-            <img class="gh-card-image"
-                srcset="{{img_url feature_image size="s"}} 300w,
+            <img class="blog-item__preview-image"
+                 srcset="{{img_url feature_image size="s"}} 300w,
                         {{img_url feature_image size="m"}} 600w,
                         {{img_url feature_image size="l"}} 1000w,
                         {{img_url feature_image size="xl"}} 2000w"
-                sizes="(max-width: 1000px) 400px, 700px"
-                src="{{img_url feature_image size="m"}}"
-                alt="{{title}}"
+                 sizes="(max-width: 1000px) 400px, 700px"
+                 src="{{img_url feature_image size="m"}}"
+                 alt="{{title}}"
             />
         {{/if}}
-        <div class="gh-card-content">
-            <span class="gh-card-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
-            <h2 class="gh-card-title">{{title}}</h2>
-            <p>{{excerpt}}</p>
-            <strong>Read more</strong>
+        <div class="blog-summary-wrapper">
+            <h2 class="blog-heading-link">{{title}}</h2>
+            <div class="subtitle-author">Door {{authors}}</div>
+            <p class="paragraph-light">{{excerpt}}</p>
+            <div class="date-and-action-wrapper">
+                <span class="label cc-blog-date">
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                    <span class="bull">&bull;</span> {{reading_time}}</span>
+                <a href="{{url}}" <strong class="link blog-redirect">Lees meer →</strong></div>
+            </div>
         </div>
     </a>
 </article>

@@ -24,6 +24,9 @@
 }
 
 .gh-readmore h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3.3rem;
     width: 100%;
     font-size: inherit;
 }

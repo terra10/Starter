@@ -1,0 +1,112 @@
+.gh-excerpt.about {
+    margin-top: -2rem;
+    margin-bottom: 6rem;
+}
+
+
+.divider.about {
+    margin-bottom: 0;
+}
+
+#about-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#about-right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.employees {
+    margin-bottom: 5rem;
+}
+
+.employee {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.employee.right {
+    margin-bottom: 4rem;
+    flex-direction: row-reverse;
+}
+
+.employee.left {
+    margin-bottom: 4rem;
+}
+
+.employee__content {
+    margin-left: 0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-style: none none none solid;
+    border-width: 0.1rem;
+    border-color: #000 #000 #000 #ddd;
+}
+
+.employee__content.right {
+    border-right-style: solid;
+    border-right-color: #ddd;
+    border-left-style: none;
+}
+
+.employee__image {
+    margin: 0 2rem 2rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 50%;
+}
+
+.employee__name {
+    margin-bottom: -0.5rem;
+    color: #fff;
+}
+
+.employee__title {
+    opacity: 0.6;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.employee__description {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.employees__header {
+    margin-bottom: 4rem;
+    color: #a18455;
+}
+
+.filosofie {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #2a1b38;
+}
+
+.heading-2 {
+    position: relative;
+    color: #a18455;
+    text-align: center;
+}
+
+.call-to-vacatures {
+    display: flex;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-quote {
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}

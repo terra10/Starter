@@ -13,7 +13,6 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "components/global.css";
 @import "components/forms.css";
 @import "components/buttons.css";
-@import "components/home.css";
 
 /* Ghost components */
 @import "ghost/header.css";
@@ -22,6 +21,13 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "ghost/members.css";
 @import "ghost/errors.css";
 @import "ghost/footer.css";
+
+/* Custom components */
+@import "components/home.css";
+@import "components/propositions.css";
+@import "components/blogs.css";
+@import "components/about.css";
+@import "components/contact.css";
 
 
 /* Main - Your styles here! Edit below
@@ -48,11 +54,15 @@ html,
 }
 
 .gh-article {
+    opacity: 0.8;
     padding: 8vmin 0;
 }
 
 .gh-postfeed {
-    padding: 8vmin 0;
+    width: 100%;
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .gh-container {
@@ -164,17 +174,26 @@ html,
 /* ---------------------------------------------------------- */
 
 .gh-header {
-    padding: 0 0 8vmin 0;
     text-align: center;
 }
 
 .gh-post-meta {
+    color: #fff;
     display: block;
     margin: 0 0 1rem;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     opacity: 0.8;
+}
+
+.gh-title {
+    color: #a18455;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+    font-weight: 400;
 }
 
 .gh-excerpt {
@@ -328,7 +347,7 @@ html,
     margin-bottom: 6rem;
 }
 
-.paragraph-light {
+.paragraph-light, .gh-canvas .paragraph-light{
     opacity: 0.8;
     color: #fff;
     font-size: 1.4rem;
@@ -337,7 +356,7 @@ html,
     text-transform: none;
 }
 
-.paragraph-bigger {
+.paragraph-bigger, .gh-excerpt {
     margin-bottom: 1rem;
     opacity: 1;
     color: #fff;
@@ -345,6 +364,17 @@ html,
     line-height: 3.4rem;
     font-weight: 400;
 }
+
+.gh-excerpt {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.paragraph-bigger.cc-bigger-light {
+    opacity: 0.8;
+    color: #fff;
+}
+
 
 .paragraph-bigger.cc-bigger-light {
     opacity: 0.8;
@@ -390,6 +420,7 @@ html,
     margin-right: 0;
     margin-left: 0;
     background-color: #f4f4f4;
+    color: #1a1b1f;
 }
 
 .container.cc-subscription-form {
@@ -468,3 +499,6 @@ html,
     text-align: center;
 }
 
+.subtitle-author a {
+    color: #fff;
+}
