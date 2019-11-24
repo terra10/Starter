@@ -2,11 +2,14 @@
 <html lang="{{@site.lang}}">
 <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+          media="all">
 
     <title>{{meta_title}}</title>
 
@@ -17,96 +20,121 @@
 <body class="{{body_class}}">
 <div class="gh-viewport">
 
-<header id="gh-head" class="gh-head">
-    <nav class="gh-container">
+    <header id="gh-head" class="gh-head">
+        <nav class="gh-container">
 
-        <div class="gh-head-brand">
-            <a class="gh-head-logo" href="{{@site.url}}">
-                {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
-                {{else}}
-                    {{@site.title}}
-                {{/if}}
-            </a>
-            <a class="gh-burger" role="button">
-                <div class="gh-burger-box">
-                    <div class="gh-burger-inner"></div>
-                </div>
-            </a>
-        </div>
-        <div class="gh-head-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-head-actions">
-            <div class="gh-head-actions-list">
-                {{#if @site.facebook}}
-                <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                {{/if}}
-                {{#if @site.twitter}}
-                <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                {{/if}}
-                <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="{{@site.url}}">
+                    <img src="/assets/logo.png" alt="{{@site.title}}"/>
+                </a>
+                <a class="gh-burger" role="button">
+                    <div class="gh-burger-box">
+                        <div class="gh-burger-inner"></div>
+                    </div>
+                </a>
             </div>
+            <div class="gh-head-menu">
+                {{navigation}}
+            </div>
+            <div class="gh-head-actions">
+                <div class="gh-head-actions-list">
+                    {{#if @site.facebook}}
+                        <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank"
+                           rel="noopener">{{> "icons/facebook"}}</a>
+                    {{/if}}
+                    {{#if @site.twitter}}
+                        <a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
+                           rel="noopener">{{> "icons/twitter"}}</a>
+                    {{/if}}
+                    <a href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank"
+                       rel="noopener">{{> "icons/rss"}}</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gh-main">
+
+        {{{body}}}
+        {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
+
+    </main>
+
+    <footer class="gh-foot">
+        <div class="container">
+            <div class="w-layout-grid footer"><a href="/" id="footer-logo"
+                                                 class="logo-link w-inline-block w--current">
+                <img src="/assets/footer_logo.png" width="400" alt="" class="logo-footer"></a>
+                <div id="menu-header" class="label">Menu</div>
+                <div id="menu-column" class="links-section-footer">
+                    <a href="/" class="footer-link w--current">Home</a>
+                    <a href="/propositions" class="footer-link">Propositie</a>
+                    <a href="/blog" class="footer-link">Blogs</a>
+                    <a href="/over-ons" class="footer-link">Over ons</a>
+                    <a href="https://www.rubix.nl/vacatures/" target="_blank" class="footer-link">Vacatures</a>
+                    <a href="/contact" class="footer-link">Contact</a>
+                </div>
+                <div id="propositions-header" class="label">Proposities</div>
+                <div id="propositions-column" class="links-section-footer">
+                    <a href="/propositions" class="footer-link">Cloud Native</a>
+                    <a href="/propositions" class="footer-link">Cloud Adoptie Proces</a>
+                    <a href="/propositions" class="footer-link">Cloud Enablement</a>
+                </div>
+                <div id="affilitates-header" class="label">Affiliates</div>
+                <div id="affilitates-column" class="links-section-footer">
+                    <a href="https://www.rubix.nl" target="_blank" class="footer-link">Rubix.nl</a>
+                    <a href="http://www.axonx.ai" target="_blank" class="footer-link">AxonX.ai</a>
+                    <a href="https://www.meetup.com/Terra-10-Meetup/" target="_blank" class="footer-link">Meetup.com</a>
+                </div>
+                <div id="follow-header" class="label">Follow</div>
+                <div id="follow-column" class="links-section-footer">
+                    <a href="https://www.instagram.com/webflowapp/" target="_blank" class="footer-link">Instagram</a>
+                    <a href="https://www.facebook.com/webflow/" target="_blank" class="footer-link">Facebook</a>
+                    <a href="https://twitter.com/terra10io" target="_blank" class="footer-link">Twitter</a>
+                </div>
+               </div>
         </div>
-    </nav>
-</header>
-
-<main class="gh-main">
-
-    {{{body}}}
-    {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
-
-</main>
-
-<footer class="gh-foot">
-    <div class="gh-container">
-        <div class="gh-foot-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-foot-meta">
-            Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </div>
 
 {{!-- <foot> --}}
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 {{#if pagination.pages}}
-<script>
-    var maxPages = parseInt('{{pagination.pages}}');
-</script>
-<script src="{{asset "built/infinitescroll.js"}}"></script>
+    <script>
+        var maxPages = parseInt('{{pagination.pages}}');
+    </script>
+    <script src="{{asset "built/infinitescroll.js"}}"></script>
 {{/if}}
 
 <script>
-$(document).ready(function () {
-    // Mobile Menu Trigger
-    $('.gh-burger').click(function () {
-        $('body').toggleClass('gh-head-open');
+    $(document).ready(function () {
+        // Mobile Menu Trigger
+        $('.gh-burger').click(function () {
+            $('body').toggleClass('gh-head-open');
+        });
     });
-});
 </script>
 
 {{#is "post, page"}}
-<script src="{{asset "built/jquery.fitvids.js"}}"></script>
-<script>
-var images = document.querySelectorAll('.kg-gallery-image img');
-images.forEach(function (image) {
-    var container = image.closest('.kg-gallery-image');
-    var width = image.attributes.width.value;
-    var height = image.attributes.height.value;
-    var ratio = width / height;
-    container.style.flex = ratio + ' 1 0%';
-});
-$(document).ready(function () {
-    var $postContent = $(".gh-content");
-    $postContent.fitVids();
-});
-</script>
+    <script src="{{asset "built/jquery.fitvids.js"}}"></script>
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        });
+        $(document).ready(function () {
+            var $postContent = $(".gh-content");
+            $postContent.fitVids();
+        });
+    </script>
 {{/is}}
 
 {{ghost_foot}}

@@ -65,3 +65,35 @@
 .gh-button.gh-button-primary:hover {
     background-color: color(var(--color-primary) l(-10%));
 }
+
+.button {
+    padding: 12px 25px;
+    border-radius: 0px;
+    background-color: #2a1b38;
+    -webkit-transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    transition: background-color 400ms ease, opacity 400ms ease, color 400ms ease;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 30rem;
+}
+
+.button.white-button {
+    padding: 16px 35px;
+    background-color: #fff;
+    color: #202020;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.button.white-button:hover {
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.button.white-button:active {
+    background-color: hsla(0, 0%, 100%, 0.9);
+}
+

@@ -1,7 +1,7 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
+    "name": "terra10",
+    "description": "The Terra10 website theme",
+    "demo": "https://terra10.io",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=3.0.0",
@@ -39,10 +39,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
+        "url": "https://github.com/terra10/theme"
     },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
+    "bugs": "hhttps://github.com/terra10/theme/issues",
+    "contributors": "https://github.com/terra10/theme/graphs/contributors",
     "devDependencies": {
         "autoprefixer": "9.6.1",
         "cssnano": "4.1.10",

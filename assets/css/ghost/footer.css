@@ -5,15 +5,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8vmin 4vw;
+    padding: 0 3rem;
 }
 
 .gh-foot .gh-container {
     width: auto;
-}
-
-.gh-foot a {
-    color: inherit;
 }
 
 .gh-foot-menu {
@@ -36,18 +32,115 @@
     padding: 0;
 }
 
-.gh-foot-menu .nav a {
-    display: inline-block;
-    padding: 3px 0;
-    text-decoration: none;
-    box-shadow: 0 -1px 0 0 currentcolor inset;
-}
-
 .gh-foot-meta {
     margin: 2rem 0;
     font-size: 1.5rem;
     text-align: center;
     opacity: 0.5;
+}
+
+#footer-logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.logo-link {
+    z-index: 1;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-link:active {
+    opacity: 0.7;
+}
+
+.links-section-footer {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: column;
+}
+
+#menu-header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#menu-column {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#propositions-header {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#propositions-column {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#affilitates-header {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#affilitates-column {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#follow-header {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#follow-column {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-link {
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    -webkit-transition: color 200ms ease, opacity 200ms ease;
+    transition: color 200ms ease, opacity 200ms ease;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+a.footer-link {
+    color: #fff;
+}
+
+.footer-link:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.footer-link.w--current {
+    color: #fff;
 }
 
 @media (max-width: 700px) {
