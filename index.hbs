@@ -1,79 +1,24 @@
 {{!< default}}
 
-<div class="gh-page index">
-    <div class="intro-header">
-        <div class="intro-content"><img
-                src="/assets/square-logo.png"
-                width="300" alt="Terra 10 Logo" class="image">
-            <div class="intro-text">
-                <div class="paragraph-bigger cc-bigger-light">Cloud enablement in 3 stappen<br></div>
-            </div>
-            <a href="/propositions" class="button white-button inline-block">
-                <div>Lees meer</div>
-            </a></div>
-        <div class="fade-out"></div>
-    </div>
-    <div class="container">
-        <div class="main-heading-wrap">
-            <h1 class="heading">Terra 10 - Go Cloud Native!</h1>
-            <div class="paragraph-bigger cc-bigger-light">Wil je dat jullie applicaties altijd en overal
-                draaien?<br><br>Ontwijk de 1e fase cloud valkuilen van hoge kosten en lage schaalbaarheid. Stap direct
-                in in de nieuwste cloud native technologieën.<br></div>
+<article class="gh-article">
+
+    <header class="gh-header gh-canvas blog">
+        <h1 class="gh-title">Onze blogs</h1>
+        <p class="gh-excerpt">Een selectie van artikelen gemaakt door Terra 10 eindbazen</p>
+
+
+    </header>
+
+    <div class="gh-content gh-canvas">
+        <div class="gh-postfeed">
+            {{#foreach posts limit=3}}
+
+                {{> "card"}} {{!-- partials/card.hbs --}}
+
+            {{/foreach}}
         </div>
-        <div class="divider"></div>
-        <div class="content-wrapper">
-            <h3 class="heading-2">Unleash the potential of cloud native</h3>
-            <div class="w-layout-grid grid-4">
-                <div class="div-block-2"><img
-                        src="/assets/Icon-cost.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Laag gebruik van cloud resources</p></div>
-                <div class="div-block-2"><img
-                        src="/assets/Icon-scale.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Hyper scalability</p></div>
-                <div class="div-block-2"><img
-                        src="/assets/Icon-flexibility.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Flexibiliteit om aan te passen</p></div>
-                <div class="div-block-2"><img
-                        src="/assets/Icon-cost.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Verlichting beheerslast</p></div>
-                <div class="div-block-2"><img
-                        src="/assets/Icon-trainingen.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Hoge productiviteit ontwikkelaars</p></div>
-                <div class="div-block-2"><img
-                        src="/assets/Icon-integratie.png"
-                        width="75" alt="" class="image-3">
-                    <p class="benefits">Versimpeling integratie</p></div>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <h3 class="heading-2">Het Terra 10 Traject</h3>
-        <div class="w-layout-grid main-paragraph-wrap">
-            <p id="step-1" class="paragraph-light steps">Stap 1</p>
-            <p id="step-2" class="paragraph-light steps">Stap 2</p>
-            <p id="step-3" class="paragraph-light steps">Stap 3</p>
-            <p class="steps-explanation">Terra 10 zal door middel van een aantal interviews een intake doen van het
-                software landschap.</p>
-            <p class="steps-explanation">Op de intake zal een stappenplan en bijbehorend advies volgen om snel en
-                efficent de stap naar de 2e fase te maken.</p>
-            <p class="steps-explanation">Terra 10 zal het stappenplan samen met u ten uitvoer brengen en uw overgang
-                naar de cloud realiseren</p></div>
+        {{pagination}}
     </div>
-    <div class="call-to-action">
-        <div class="div-block">
-            <h4 class="call-to-action__header">Laat onze experts contact met u opnemen om u naar de
-                2e fase te begeleiden!</h4>
-            <a href="/contact" class="button white-button w-button">Contact opnemen</a>
-        </div>
-    </div>
-    {{> "meetup"}}
-    <div class="call-to-action">
-        <div class="div-block">
-            <h4 class="call-to-action__header">Terra 10 is hiring! Wil jij ook een half-god
-            worden?</h4><a href="#" class="button white-button">Vacatures</a></div>
-    </div>
-</div>
+</article>
+{{> "meetup"}}
+

@@ -225,3 +225,9 @@ p {
         scroll-behavior: auto !important;
     }
 }
+
+@media (max-width: 767px) {
+    h1.heading {
+        text-align: center;
+    }
+}

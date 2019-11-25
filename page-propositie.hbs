@@ -1,0 +1,68 @@
+{{!< default}}
+
+{{#post}}
+    <article class="gh-article {{post_class}}">
+
+        <header class="gh-header gh-canvas">
+            <h1 class="gh-title">{{title}}</h1>
+
+            {{#if custom_excerpt}}
+                <p class="gh-excerpt">{{custom_excerpt}}</p>
+            {{/if}}
+
+            {{#if feature_image}}
+                <img class="gh-feature-image" src="{{feature_image}}" alt="{{title}}"/>
+            {{/if}}
+        </header>
+
+        <div class="gh-content gh-canvas">
+            <div class="section propositions">
+                <div class="proposition left"><img
+                        src="/assets/Icon-workshop.png"
+                        width="150" height="150" alt="" class="image-2">
+                    <div class="proposition__content"><h3 class="heading-8" id="cloud-native">Cloud Native</h3>
+                        <p class="paragraph">Cloud-native is meer dan een modewoord. Het is een integrale aanpak waarbij
+                            het niet gaat om wáár je software draait, maar om hoe het wordt gebouwd en uitgerold. Door
+                            op cloud-native wijze applicaties te ontwikkelen verkort je je time-to-market, wordt je
+                            schaalbaarheid bijna oneindig en vergroot je je flexibiliteit enorm.De public cloud heeft
+                            een enorme verandering teweeg gebracht in hoe we nadenken over infrastructuur investeringen.
+                            Wat vaak over het hoofd wordt gezien, is dat cloud delivery modellen niet exclusief voor
+                            publieke omgevingen zijn. Voor organisaties is een private cloud juist vele malen
+                            interessanter. Wanneer je namelijk als organisatie je software laat bouwen en draaien via de
+                            cloud-native methodiek, kun je nieuwe ideeën vele malen sneller op de markt te brengen. Je
+                            kunt dan dus ook veel sneller reageren op de behoeftes van je klanten.</p></div>
+                </div>
+                <div class="proposition right"><img
+                        src="/assets/Icon-trainingen.png"
+                        width="150" height="150" alt="" class="image-2">
+                    <div class="proposition__content border-right"><h3 class="heading-9" id="cloud-adoptie-proces">Cloud Adoptie Proces</h3>
+                        <p class="paragraph-2">Starten met cloud adoptie binnen een organisatie kan een behoorlijke
+                            onderneming zijn. Het is een ingrijpend en intensief proces dat op de juiste manier ingezet
+                            en begeleid moet worden. Gelukkig wegen de grote voordelen die het oplevert – zoals
+                            competitieve onderscheiding en sneller creëren van waarde – hier ruimschoots tegenop. Ons
+                            Terra 10 team staat klaar om samen met jou deze onderneming aan te gaan. Na een eerste
+                            vrijblijvend adviesgesprek kunnen we meestal al aangeven hoe snel de voordelen van cloud
+                            adoptie voor jouw organisatie merkbaar zullen zijn.</p></div>
+                </div>
+                <div class="proposition left"><img
+                        src="/assets/Icon-migratie.png"
+                        width="150" height="150" alt="" class="image-2">
+                    <div class="proposition__content"><h3 id="3-stappen">Cloud enablement in 3 stappen</h3>
+                        <p>Onze Terra 10 cloud enablement aanpak, de Cloud Application Maturity &amp; Migration, bestaat
+                            uit 3 verschillende opties. De eerste is de klassieke lift &amp; shift naar een moderne
+                            cloud infrastructuur. Dit betekent als het ware het oppakken van de aanwezige applicaties en
+                            operaties en deze in de cloud zetten zoals ze zijn. Dus zonder ze te herontwerpen. De tweede
+                            aanpak houdt in dat tegelijk met de migratie naar de cloud de software architectuur wordt
+                            verbeterd. Dit maakt het mogelijk om nieuwe software architectuur principes zoals
+                            containertechnologie en microservices te omarmen. De derde aanpak omvat het compleet
+                            herontwerpen en opnieuw opbouwen van de aanwezige architectuur.<br><br>De uiteindelijke
+                            aanpakkeuze hangt in de regel af van de complexiteit van de applicaties. Voor sommige
+                            eenvoudige applicaties zal de lift &amp; shift methode prima voldoen. Bij andere, vaak
+                            complexere, software zal de herontwerp aanpak de meeste voordelen opleveren.</p></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    {{> "meetup"}}
+{{/post}}

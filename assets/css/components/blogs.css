@@ -1,6 +1,6 @@
 .blog-item {
     display: flex;
-    max-width: 114rem;
+    max-width: 66rem;
     padding-bottom: 4rem;
     cursor: pointer;
     margin-right: auto;
@@ -28,10 +28,7 @@
 }
 
 .blog-summary-wrapper {
-    width: 70%;
-    margin-right: auto;
     margin-bottom: 20px;
-    margin-left: auto;
     text-align: left;
 }
 
@@ -70,3 +67,8 @@
     display: inline;
 }
 
+@media (max-width: 479px) {
+    .blog-item__preview-image {
+        height: 180px;
+    }
+}

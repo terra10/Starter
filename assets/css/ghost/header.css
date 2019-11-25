@@ -267,9 +267,18 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         display: inline-block;
     }
     #gh-head {
+        height: 14rem;
         transition: all 0.4s ease-out;
         overflow: hidden;
     }
+    .gh-head-open #gh-head {
+        height: auto;
+    }
+
+    .gh-head-open #gh-head .gh-container{
+        padding-top: 2rem;
+    }
+
     #gh-head .gh-container {
         height: 100%;
         grid-template-columns: 1fr;
@@ -288,7 +297,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         font-size: 2.2rem;
     }
     #gh-head .gh-head-logo img {
-        max-height: 40px;
+
     }
     #gh-head .gh-head-menu {
         align-self: center;

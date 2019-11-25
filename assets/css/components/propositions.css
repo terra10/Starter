@@ -36,3 +36,32 @@
     border-right: 0.1rem solid hsla(0, 0%, 86.7%, 0.25);
     border-left-style: none;
 }
+
+
+@media (max-width: 479px) {
+    .proposition.left {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .proposition.right {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .proposition__content {
+        border-style: solid none none;
+        border-width: 1px;
+        border-color: #ddd #000 #000;
+    }
+    .proposition__content.border-right {
+        border-right-style: none;
+    }
+    .blog-item__preview-image {
+        height: 180px;
+    }
+}

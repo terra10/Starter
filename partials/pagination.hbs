@@ -1,9 +1,27 @@
 <nav class="pagination" role="navigation">
     {{#if prev}}
-        <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+        <a class="newer-posts" href="{{page_url prev}}">&larr;  Nieuwere Posts</a>
+    {{else}}
+        <a class="dummy" ></a>
     {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
+    <span class="page-number">Pagina {{page}} van {{pages}}</span>
     {{#if next}}
-        <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+        <a class="older-posts" href="{{page_url next}}"> Oudere Posts &rarr;</a>
+    {{else}}
+        <a class="dummy" ></a>
+    {{/if}}
+</nav>
+
+<nav class="pagination mobile" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}">&larr;  Nieuwer</a>
+    {{else}}
+        <a class="dummy" ></a>
+    {{/if}}
+    <span class="page-number">Pagina {{page}}/{{pages}}</span>
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}"> Ouder &rarr;</a>
+    {{else}}
+        <a class="dummy" ></a>
     {{/if}}
 </nav>

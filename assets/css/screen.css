@@ -176,6 +176,9 @@ html,
 .gh-header {
     text-align: center;
 }
+.gh-header.blog {
+    margin-bottom: 6rem;
+}
 
 .gh-post-meta {
     color: #fff;
@@ -190,7 +193,7 @@ html,
 .gh-title {
     color: #a18455;
     margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     font-size: 4.4rem;
     line-height: 6.2rem;
     font-weight: 400;
@@ -208,6 +211,27 @@ html,
 
 .gh-post-footer {
     margin: 2rem 0;
+}
+
+.pagination {
+    display: flex;
+    width: 100%;
+    max-width: 66rem;
+    padding-bottom: 4rem;
+    cursor: pointer;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    margin-left: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pagination.mobile {
+    display: none;
+}
+
+.pagination a:hover, .pagination a:active {
+    text-decoration: underline;
 }
 
 
@@ -258,7 +282,6 @@ html,
 }
 
 .container {
-    width: 100%;
     max-width: 1040px;
     margin-right: auto;
     margin-left: auto;
@@ -266,7 +289,9 @@ html,
 
 
 .main-heading-wrap {
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .content-wrapper {
@@ -331,6 +356,8 @@ html,
 .image-3 {
     border: 0.3rem solid #a18455;
     border-radius: 2rem;
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 .grid-4 {
@@ -501,4 +528,119 @@ html,
 
 .subtitle-author a {
     color: #fff;
+}
+
+@media (max-width: 767px) {
+    .main-paragraph-wrap {
+        grid-row-gap: 3rem;
+        grid-template-areas: "." ".";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .heading-jumbo {
+        font-size: 5rem;
+        line-height: 6.4rem;
+    }
+    .heading-jumbo-small {
+        font-size: 3rem;
+        line-height: 5.2rem;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-link {
+        padding-left: 0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .cc-subscription-form {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .footer {
+        display: flex;
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #step-1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    #step-1-explanation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: center;
+    }
+
+    #step-2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: center;
+    }
+
+    #step-2-explanation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: center;
+    }
+
+    #step-3 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        justify-self: center;
+    }
+
+    #step-3-explanation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        justify-self: center;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .meetup__content {
+        padding-top: 1rem;
+        border-top: 0.1rem solid #ddd;
+        border-left-style: none;
+    }
+    .meetup {
+        flex-direction: column;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    .pagination.mobile {
+        display: flex;
+    }
 }
