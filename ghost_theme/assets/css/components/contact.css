@@ -9,42 +9,103 @@
 }
 
 .get-in-touch-form-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     width: 70%;
     margin-right: auto;
     margin-bottom: 100px;
     margin-left: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
 }
 
 .get-in-touch-form {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .credentials-inputs-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
+}
+
+.field-label {
+    color: #fff;
+}
+
+.text-field.cc-contact-field {
+    margin-bottom: 25px;
+}
+
+.text-field.cc-textarea {
+    height: 200px;
+    padding-top: 12px;
+}
+
+.w-input {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.text-field {
+    margin-bottom: 18px;
+    padding: 21px 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 0px;
+    -webkit-transition: border-color 400ms ease;
+    transition: border-color 400ms ease;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.text-field:hover {
+    border-color: #e3e6eb;
+}
+
+.text-field:active {
+    border-color: #43464d;
+}
+
+.text-field:focus,
+.text-field.-wfp-focus {
+    border-color: #43464d;
+}
+
+.text-field::-webkit-input-placeholder {
+    color: rgba(50, 52, 58, 0.4);
+}
+
+.text-field:-ms-input-placeholder {
+    color: rgba(50, 52, 58, 0.4);
+}
+
+.text-field::-ms-input-placeholder {
+    color: rgba(50, 52, 58, 0.4);
+}
+
+.text-field::placeholder {
+    color: rgba(50, 52, 58, 0.4);
+}
+
+
+label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: 0;
 }
 
 .map {

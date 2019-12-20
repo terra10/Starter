@@ -49,6 +49,11 @@ blockquote {
     padding: 0;
 }
 
+pre {
+    background-color: black;
+    color: white;
+}
+
 ul[class],
 ol[class] {
     padding: 0;

@@ -24,9 +24,10 @@ production stylesheet in assets/built/screen.css using: gulp dev
 
 /* Custom components */
 @import "components/home.css";
-@import "components/propositions.css";
+@import "components/diensten.css";
 @import "components/blogs.css";
 @import "components/about.css";
+@import "components/team.css";
 @import "components/contact.css";
 
 
@@ -377,8 +378,6 @@ html,
 .paragraph-light, .gh-canvas .paragraph-light{
     opacity: 0.8;
     color: #fff;
-    font-size: 1.4rem;
-    line-height: 2.6rem;
     letter-spacing: 0;
     text-transform: none;
 }

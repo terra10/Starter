@@ -30,7 +30,7 @@
     margin-bottom: 3rem;
 }
 
-.employee.right {
+.employee:nth-of-type(even) {
     margin-bottom: 4rem;
     flex-direction: row-reverse;
 }
@@ -47,8 +47,7 @@
     border-width: 0.1rem;
     border-color: #000 #000 #000 #ddd;
 }
-
-.employee__content.right {
+.employee:nth-of-type(even) .employee__content {
     border-right-style: solid;
     border-right-color: #ddd;
     border-left-style: none;

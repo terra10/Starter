@@ -1,0 +1,53 @@
+{{!< default}}
+
+<!-- Plaatjes kleiner -> zodat er meer medewerkers bij kunnen -->
+
+{{#post}}
+    <article class="gh-article {{post_class}}">
+
+        <header class="gh-header gh-canvas">
+            <h1 class="gh-title">{{title}}</h1>
+
+            {{#if custom_excerpt}}
+                <p class="gh-excerpt about">{{custom_excerpt}}</p>
+            {{/if}}
+
+            {{#if feature_image}}
+                <img class="gh-feature-image" src="{{feature_image}}" alt="{{title}}"/>
+            {{/if}}
+        </header>
+
+        <div class="gh-content gh-canvas">
+            {{#get 'authors' filter='name:-TERRA10' limit='20' include='count.posts' order='count.posts desc'}}
+                <div class="employees">
+                    {{#foreach authors}}
+                        <div class="employee">
+                            {{#if profile_image}}
+                                <img src="{{profile_image}}"
+                                     width="250" height="250" alt="{{name}}" class="employee__image">
+                            {{/if}}
+
+                            <div class="employee__content"><h3 class="employee__name">{{name}}</h3>
+                                <div class="employee__title">{{location}}
+                                </div>
+                                <p class="employee__description">{{bio}}</p></div>
+                        </div>
+                    {{/foreach}}
+                </div>
+            {{/get}}
+            <div class="divider"></div>
+            <div class="call-to-vacatures"><h5 class="heading-3 call-to-vacatures-jumbo">Wij zijn één van de eerste
+                Nederlandse initiatieven met een 100% focus op cloud-nativeness. En daar blijkt veel behoefte aan.
+                Daarom zijn we, ondanks ons relatief korte bestaan, nu al aan het uitbreiden. Ben jij de uitbreiding die
+                wij zoeken?</h5><a href="/vacatures" class="button white-button">Vacatures</a></div>
+        </div>
+    </article>
+    <div class="filosofie">
+        <div class="about-quote"><h2 class="heading-2">Terra 10</h2>
+            <div class="paragraph-bigger dark">Applications that unleash the cloud's potential...
+            </div>
+            <div class="paragraph-light dark">― Luc Gorissen</div>
+        </div>
+    </div>
+    {{> "meetup"}}
+{{/post}}
