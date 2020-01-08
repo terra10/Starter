@@ -59,6 +59,7 @@
     border-width: 0.3rem;
     border-color: hsla(0, 0%, 100%, 0.8);
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .employee__name {

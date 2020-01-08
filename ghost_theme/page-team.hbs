@@ -18,7 +18,7 @@
         </header>
 
         <div class="gh-content gh-canvas">
-            {{#get 'authors' filter='name:-TERRA10' limit='20' include='count.posts' order='count.posts desc'}}
+            {{#get 'authors' filter='name:-TERRA10' limit='all' include='count.posts' order='count.posts desc'}}
                 <div class="employees">
                     {{#foreach authors}}
                         <div class="employee">
