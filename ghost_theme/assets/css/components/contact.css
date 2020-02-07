@@ -113,3 +113,11 @@ form {
     margin-bottom: 100px;
     line-height: 20px;
 }
+
+#form-status {
+    text-align: center;
+}
+
+#submit-message-btn {
+    max-width: 100%;
+}
