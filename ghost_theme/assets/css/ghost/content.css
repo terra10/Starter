@@ -89,6 +89,10 @@
     margin-top: 1.5rem;
 }
 
+.gh-content .kg-image-card img {
+    margin: 0 auto;
+}
+
 .gh-canvas blockquote,
 .gh-canvas ol,
 .gh-canvas ul,
