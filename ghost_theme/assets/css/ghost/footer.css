@@ -4,6 +4,7 @@
 .gh-foot {
     display: flex;
     align-items: center;
+    flex-flow:column;
     justify-content: center;
     padding: 0 3rem;
 }
@@ -147,4 +148,35 @@ a.footer-link {
     .gh-foot-menu .nav {
         font-size: 1.6rem;
     }
+}
+
+.privacy-footer {
+    display: block;
+    position: relative;
+    width: 120%;
+    background-color: #A18455;
+}
+
+.bottom-nav {
+    display: flex;
+    flex-flow: row;
+}
+
+ul.bottom-nav {
+    padding: 15px 0;
+}
+
+.bottom-nav li {
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+.bottom-nav li a {
+    text-decoration: none;
+}
+
+
+.bottom-nav li a:hover {
+    text-decoration: underline;
 }

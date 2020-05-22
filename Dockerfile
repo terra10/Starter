@@ -1,5 +1,5 @@
 # Pull base image.
-FROM ghost:3.15.2
+FROM ghost:3.16.1
 
 WORKDIR /var/lib/ghost
 
